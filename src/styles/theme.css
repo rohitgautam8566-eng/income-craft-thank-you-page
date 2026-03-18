@@ -1,0 +1,75 @@
+:root {
+  /* Typography */
+  --font-display: "Urbanist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "Urbanist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-subheading: "Urbanist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-caption: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-code: "JetBrains Mono", "Fira Code", monospace;
+
+  /* Brand Colors - Premium OLED Emerald Fintech */
+  --color-brand-dark: #000B06; /* Deep OLED/Forest Hybrid */
+  --color-brand-primary: #00FF88; /* Vibrant Neon Emerald */
+  --color-brand-highlight: #70FFB8; /* Neon Mint Glow */
+  --color-brand-surface: #04140D; /* Dark Glass Surface */
+
+  /* Neutral Colors */
+  --color-neutral-1: #ffffff;
+  --color-neutral-2: #fcfcfc;
+  --color-neutral-3: #f5f5f5;
+  --color-neutral-4: #e5e5e5;
+  --color-neutral-5: #d4d4d4;
+  --color-neutral-6: #a3a3a3;
+  --color-neutral-7: #737373;
+  --color-neutral-8: #525252;
+  --color-neutral-9: #404040;
+  --color-neutral-10: #262626;
+  --color-neutral-11: #171717;
+  --color-neutral-12: #0a0a0a;
+  --color-neutral-contrast: #fff;
+
+  /* Accent Colors (Green Mapped) */
+  --color-accent-1: #e0ffea;
+  --color-accent-2: #b3ffd1;
+  --color-accent-3: #80ffb5;
+  --color-accent-4: #4dff99;
+  --color-accent-5: #00FF88; /* Bright Neon */
+  --color-accent-6: #00e67a;
+  --color-accent-7: #00cc6c;
+  --color-accent-8: #00b35f;
+  --color-accent-9: #00FF88; /* Brand Highlight */
+  --color-accent-10: #009952;
+  --color-accent-11: #008044;
+  --color-accent-12: #000B06; /* Brand Dark */
+  --color-accent-contrast: #000;
+
+  /* Error Colors */
+  --color-error-1: #fff5f5;
+  --color-error-2: #ffe3e3;
+  --color-error-3: #ffc9c9;
+  --color-error-4: #ffa8a8;
+  --color-error-5: #ff8787;
+  --color-error-6: #ff6b6b;
+  --color-error-7: #fa5252;
+  --color-error-8: #f03e3e;
+  --color-error-9: #e03131;
+  --color-error-10: #c92a2a;
+  --color-error-11: #b02525;
+  --color-error-12: #962020;
+  --color-error-contrast: #fff;
+
+  /* Success Colors */
+  --color-success-1: #e6fcf5;
+  --color-success-2: #c3fae8;
+  --color-success-3: #96f2d7;
+  --color-success-4: #63e6be;
+  --color-success-5: #38d9a9;
+  --color-success-6: #20c997;
+  --color-success-7: #12b886;
+  --color-success-8: #0ca678;
+  --color-success-9: #099268;
+  --color-success-10: #087f5b;
+  --color-success-11: #06694c;
+  --color-success-12: #05533c;
+  --color-success-contrast: #fff;
+}

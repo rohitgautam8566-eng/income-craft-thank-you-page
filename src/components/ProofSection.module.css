@@ -1,0 +1,195 @@
+.section {
+  padding: 100px 1.5rem;
+  background: radial-gradient(circle at 50% 10%, rgba(0, 255, 136, 0.05) 0%, transparent 80%),
+              linear-gradient(180deg, #020A07 0%, #000B06 100%);
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.inView {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.headerBlock {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 60px auto;
+}
+
+.mainHeadline {
+  font-family: var(--font-heading, sans-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #fff;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+
+.subheadline {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+}
+
+/* Secondary Header (Own Results) */
+.ownHeaderBlock {
+  text-align: center;
+  max-width: 720px;
+  margin: 100px auto 60px auto; /* 100px top spacing to separate from previous block */
+}
+
+.ownHeadline {
+  font-family: var(--font-heading, sans-serif);
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #fff;
+  line-height: 1.15;
+}
+
+.ownSubheadline {
+  opacity: 0.8;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.proofGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Glass Card Style */
+.proofCard {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(0, 255, 170, 0.25);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 0 0 1px rgba(0, 255, 170, 0.1), 0 20px 60px rgba(0, 0, 0, 0.7);
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.proofCard.animIn {
+  animation: cardFadeIn 0.6s ease-out forwards;
+}
+
+@keyframes cardFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.proofCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 40px rgba(0, 255, 170, 0.2);
+}
+
+/* Inner bounds for image & video framing inside the padding */
+.cardInner {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+  width: 100%;
+  line-height: 0; /* Clear bottom ghosting */
+}
+
+.proofImage {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.proofCard:hover .proofImage {
+  transform: scale(1.03);
+}
+
+.cardTitle {
+  margin-top: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+.ownCaption {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 12px;
+  text-align: center;
+  color: #00FFA3;
+}
+
+/* Wistia Overlay */
+.playOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 10;
+  color: #00FFA3;
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  width: 48px;
+  height: 48px;
+  backdrop-filter: blur(4px);
+}
+
+/* Trust Line */
+.trustLine {
+  opacity: 0.7;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 40px;
+  color: #fff;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .proofGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .proofGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
