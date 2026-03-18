@@ -1,9 +1,5 @@
-import Home from './pages/Home'
+import ThankYou from "./routes/thank-you";
 
-function App() {
-  return (
-    <Home />
-  )
+export default function App() {
+  return <ThankYou />;
 }
-
-export default App

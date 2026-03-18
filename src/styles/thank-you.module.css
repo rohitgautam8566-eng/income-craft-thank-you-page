@@ -1,0 +1,144 @@
+.pageWrapper {
+  min-height: 100vh;
+  background-color: #000B06;
+  color: #fff;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.headline {
+  text-align: center;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.highlightGreenUnderline {
+  color: #00FF88;
+  position: relative;
+  display: inline-block;
+}
+
+.highlightGreenUnderline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(0, 255, 136, 0.4);
+  border-radius: 2px;
+}
+
+.videoLabelBar {
+  background: rgba(0, 255, 136, 0.1);
+  border: 1px solid rgba(0, 255, 136, 0.2);
+  color: #00FF88;
+  padding: 16px 24px;
+  border-radius: 12px 12px 0 0;
+  font-weight: 800;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 900px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.videoSectionWrapper {
+  width: 100%;
+  max-width: 900px;
+  background: #000;
+  border: 1px solid rgba(0, 255, 136, 0.2);
+  border-top: none;
+  border-radius: 0 0 16px 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 40px rgba(0,255,136,0.1);
+  margin-bottom: 50px;
+}
+
+.videoContainer {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.ctaWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.step2Button {
+  display: inline-block;
+  background: linear-gradient(135deg, #00FF88 0%, #00cc6c 100%);
+  color: #000B06;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 20px 48px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+
+.step2Button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 255, 136, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.supportSection {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.supportHeadline {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.supportLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.supportLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 16px 30px;
+  border-radius: 12px;
+  transition: background 0.2s;
+  width: 100%;
+  max-width: 350px;
+  justify-content: center;
+}
+
+.supportLink:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
