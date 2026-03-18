@@ -133,12 +133,12 @@
   border: 1px solid rgba(0, 255, 136, 0.2);
   box-shadow: 0 10px 40px rgba(0, 255, 136, 0.15);
   position: relative;
-  transition: box-shadow 400ms cubic-bezier(0.4, 0, 0.2, 1), transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 500ms cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .videoWrapper:hover {
-  box-shadow: 0 15px 50px rgba(0, 255, 136, 0.25), 0 0 0 1px rgba(0, 255, 136, 0.3);
-  transform: translateY(-2px);
+  box-shadow: 0 20px 60px rgba(0, 255, 136, 0.25), 0 0 0 1px rgba(0, 255, 136, 0.35);
+  transform: translateY(-4px) scale(1.01);
 }
 
 .videoWrapper wistia-player {
@@ -158,17 +158,35 @@
   padding: 16px 28px;
   border-radius: 14px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 500ms cubic-bezier(0.25, 1, 0.5, 1);
   margin-bottom: 40px;
   text-align: center;
   width: 100%;
   max-width: 600px;
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaButton::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: skewX(-20deg);
+  transition: all 700ms ease;
+}
+
+.ctaButton:hover::after {
+  left: 150%;
 }
 
 .ctaButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.4);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 255, 136, 0.45);
 }
 
 /* Support Box */
@@ -196,23 +214,27 @@
 }
 
 .supportCard {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 16px;
   border-radius: 14px;
   display: flex;
   align-items: center;
   gap: 16px;
   min-width: 250px;
-  transition: 0.3s;
+  transition: all 500ms cubic-bezier(0.25, 1, 0.5, 1);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
 .supportCard:hover {
+  background: rgba(255, 255, 255, 0.08);
   border-color: #00ff88;
-  transform: translateY(-3px);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 15px 35px -10px rgba(0, 255, 136, 0.15);
 }
 
 .supportIconWrapper {

@@ -87,7 +87,7 @@ export default function ThankYou() {
           </p>
           <div className={styles.supportLinkContainer}>
             {/* WhatsApp Card */}
-            <div className={styles.supportCard}>
+            <div className={`${styles.supportCard} ${styles.fadeIn}`} style={{ animationDelay: '0.5s' }}>
               <div className={styles.supportIconWrapper}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={32} height={32} fill="#00ff88">
                   <path d="M12.031 0C5.399 0 0 5.405 0 12.046c0 2.128.556 4.197 1.611 6.02L.032 24l6.096-1.597A11.968 11.968 0 0 0 12.031 24c6.626 0 12.022-5.4 12.022-12.031S18.656 0 12.031 0zm6.186 17.159c-.267.755-1.531 1.455-2.094 1.543-.538.083-1.187.126-3.328-.755-2.583-1.074-4.228-3.705-4.353-3.873-.13-.172-1.042-1.385-1.042-2.641 0-1.256.65-1.879.882-2.13.23-.25.502-.313.67-.313.17 0 .337.003.486.012.164.009.38-.063.593.447.228.547.886 2.152.964 2.308.08.156.128.341.026.541-.1.2-.153.322-.303.498-.152.176-.32.378-.456.516-.145.148-.299.314-.131.603.167.288.742 1.229 1.599 1.993 1.107.985 2.023 1.288 2.316 1.432.292.144.464.12.636-.076.17-.197.74-.863.938-1.161.196-.296.394-.246.663-.146.269.102 1.706.804 1.997.949.292.146.486.218.556.342.068.125.068.72-.2 1.475z" />
@@ -102,7 +102,7 @@ export default function ThankYou() {
             </div>
 
             {/* Email Card */}
-            <div className={styles.supportCard}>
+            <div className={`${styles.supportCard} ${styles.fadeIn}`} style={{ animationDelay: '0.6s' }}>
               <div className={styles.supportIconWrapper}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={32} height={32} fill="#ff3b3b">
                   <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
