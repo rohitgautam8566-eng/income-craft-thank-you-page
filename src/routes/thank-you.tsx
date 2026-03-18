@@ -10,9 +10,9 @@ export default function ThankYou() {
   return (
     <div className={styles.pageWrapper}>
       {/* BRANDING HEADER */}
-      <div className={styles.headerBrand}>
-        <FlaskConical className={styles.brandIcon} size={24} />
-        IncomeCraft Labs
+      <div className={`${styles.navbar} ${styles.fadeIn}`}>
+        <FlaskConical className={styles.logoIcon} size={24} />
+        <span className={styles.logo}>IncomeCraft Labs</span>
       </div>
 
       <div className={styles.container}>
@@ -23,14 +23,19 @@ export default function ThankYou() {
         </div>
 
         {/* 2 - MAIN HEADLINE */}
-        <div className={`${styles.headlineContainer} ${styles.fadeIn}`}>
-          <div className={styles.headlineFirstLine}>
-            First: <span className={styles.highlightYellow}>Watch This Short Guide Video</span>
-          </div>
-          <div className={styles.headlineSecondLine}>
-            To See How You Can Get Your Access
+        <div className={`${styles.headlineWrapper} ${styles.fadeIn}`}>
+          <div className={styles.mainHeadline}>
+            First:{" "}
+            <span className={styles.highlight}>
+              Watch This Short Guide Video
+            </span>
             <br />
-            And Join The Community Within A Few Minutes
+            To See How You Can{" "}
+            <span className={styles.gradientText}>Get Your Access</span>
+            <br />
+            And{" "}
+            <span className={styles.gradientText}>Join The Community</span>{" "}
+            Within A Few Minutes
           </div>
         </div>
 
