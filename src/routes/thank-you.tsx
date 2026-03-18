@@ -23,7 +23,7 @@ export default function ThankYou() {
         </div>
 
         {/* 2 - MAIN HEADLINE */}
-        <div className={styles.headlineContainer}>
+        <div className={`${styles.headlineContainer} ${styles.fadeIn}`}>
           <div className={styles.headlineFirstLine}>
             First: <span className={styles.highlightYellow}>Watch This Short Guide Video</span>
           </div>
@@ -43,7 +43,7 @@ export default function ThankYou() {
         </div>
 
         {/* 4 - VIDEO SECTION */}
-        <div className={styles.videoWrapper}>
+        <div className={`${styles.videoWrapper} ${styles.fadeIn}`} style={{ animationDelay: '0.2s' }}>
           <script src="https://fast.wistia.com/player.js" async></script>
           <script src="https://fast.wistia.com/embed/tdmpakz6we.js" async type="module"></script>
           <style
@@ -69,7 +69,8 @@ export default function ThankYou() {
           href="https://chat.whatsapp.com/L1M4k6yU8sZ21Z5mYkQ" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className={styles.ctaButton}
+          className={`${styles.ctaButton} ${styles.fadeIn}`}
+          style={{ animationDelay: '0.4s' }}
         >
           STEP 2: "CLICK HERE" TO JOIN THE COMMUNITY!
         </a>

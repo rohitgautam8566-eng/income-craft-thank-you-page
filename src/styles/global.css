@@ -7,7 +7,8 @@
 html, body {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: #ffffff;
-  background-color: #02140f;
+  background: radial-gradient(circle at top, #022e24, #02140f);
+  background-attachment: fixed;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
