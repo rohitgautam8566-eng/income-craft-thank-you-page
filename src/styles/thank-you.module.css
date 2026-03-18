@@ -1,142 +1,130 @@
 .pageWrapper {
   min-height: 100vh;
-  background-color: #000B06;
+  background-color: #02140f;
   color: #fff;
   font-family: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .headline {
   text-align: center;
-  font-size: clamp(28px, 5vw, 42px);
+  font-size: 32px;
   font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 24px;
+  line-height: 1.3;
+  margin-bottom: 8px;
 }
 
-.highlightGreenUnderline {
-  color: #00FF88;
-  position: relative;
-  display: inline-block;
-}
-
-.highlightGreenUnderline::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 100%;
-  height: 4px;
-  background-color: rgba(0, 255, 136, 0.4);
-  border-radius: 2px;
+.subtext {
+  font-size: 16px;
+  text-align: center;
+  opacity: 0.8;
+  margin-bottom: 30px;
 }
 
 .videoLabelBar {
-  background: rgba(0, 255, 136, 0.1);
-  border: 1px solid rgba(0, 255, 136, 0.2);
-  color: #00FF88;
-  padding: 16px 24px;
-  border-radius: 12px 12px 0 0;
-  font-weight: 800;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 100%;
-  max-width: 900px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.videoSectionWrapper {
-  width: 100%;
-  max-width: 900px;
-  background: #000;
-  border: 1px solid rgba(0, 255, 136, 0.2);
-  border-top: none;
-  border-radius: 0 0 16px 16px;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 40px rgba(0,255,136,0.1);
-  margin-bottom: 50px;
-}
-
-.videoContainer {
-  width: 100%;
-  position: relative;
-  aspect-ratio: 16 / 9;
-}
-
-.ctaWrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 60px;
-}
-
-.step2Button {
-  display: inline-block;
-  background: linear-gradient(135deg, #00FF88 0%, #00cc6c 100%);
-  color: #000B06;
-  font-size: 18px;
-  font-weight: 800;
-  padding: 20px 48px;
-  border-radius: 12px;
-  text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  font-weight: 700;
+  color: #00c2ff;
+  margin-bottom: 12px;
   text-align: center;
 }
 
-.step2Button:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 15px 40px rgba(0, 255, 136, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+.videoWrapper {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  background: #000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.videoWrapper wistia-player {
+  width: 100%;
+  height: auto;
+}
+
+.ctaLabel {
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.8;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #00ff88, #00c2ff);
+  color: #02140f;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(0, 255, 136, 0.2);
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 255, 136, 0.4);
 }
 
 .supportSection {
   width: 100%;
   max-width: 600px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 40px 30px;
   text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .supportHeadline {
-  font-size: 24px;
-  font-weight: 800;
-  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .supportLinks {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   align-items: center;
 }
 
 .supportLink {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
   background: rgba(255, 255, 255, 0.05);
-  padding: 16px 30px;
-  border-radius: 12px;
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
   transition: background 0.2s;
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .supportLink:hover {
