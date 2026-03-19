@@ -71,7 +71,7 @@ export default function ThankYou() {
 
         {/* 5 - STEP 2 CTA */}
         <a 
-          href="https://chat.whatsapp.com/L1M4k6yU8sZ21Z5mYkQ" 
+          href="https://whop.com/incomecraft-labs/home-page01/" 
           target="_blank" 
           rel="noopener noreferrer" 
           className={`${styles.ctaButton} ${styles.fadeIn}`}
